@@ -1,8 +1,13 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// tailwind.config.js
+
+const flowbite = require('flowbite');
+
+module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {}
+    extend: {},
   },
-  plugins: []
+  plugins: [
+    flowbite,
+  ],
 };
